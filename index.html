@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+</head>
+<body>
+    <div class="conteiner">
+        <div class="conteiner-music">
+            <form class="player-conteiner">
+                <div class="img-player">
+                    <img src="img/cover-1.png" alt="">
+                    <div class="player-txt">
+                        <p><b>Lost in the City Lights</b></p>
+                        <p>Cosmo Sheldrake</p>
+                    </div>
+                </div>
+                <div class="Player">
+                    
+                    <audio id="song" preload="auto">
+                        <source src="audio/forest-lullaby-110624.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="barra-de-progreso">
+                        <div class="time">
+                            <p id="inicio"></p>
+                            <p id="fin"></p>
+                        </div>
+                        <div id="progreso"></div>
+                    </div>
+                    <div class="controles-audio">
+                        <div class="buttons">
+                            <button type="button" id="back"><img src="img/Stop_and_play_fill.svg" ></button>
+                            <button type="button" id="play"><img id="icon-play" src="img/Play_fill.svg"></button>
+                            <button type="button" id="next"><img src="img/Stop_and_play_fill_reverse.svg" ></button>
+                        </div>
+                        
+                        
+                    </div>
+                    <script src="js/script.js"></script>
+
+                    
+                </div>
+
+                
+                <footer class="conteiner-footer">
+                    <h3>Create by Eddie Martin Mora Brenes</h3>
+                </footer>
+                
+            </form>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
